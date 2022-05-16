@@ -22,6 +22,22 @@ html {
 body {
   padding-left: 30rem; }
 
+section {
+  padding: 3rem 5%; }
+  section:nth-child(even) {
+    background: #f6f6f6; }
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1.2rem 3rem;
+  cursor: pointer;
+  color: #fff;
+  background: #263238;
+  font-size: 1.7rem; }
+  .btn:hover {
+    background: #44bb6a; }
+
 .header {
   position: fixed;
   top: 0;
@@ -89,6 +105,34 @@ body {
     background: #fff;
     color: #263238; }
 
+.home {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem; }
+  .home .image {
+    flex: 1 1 40rem; }
+    .home .image img {
+      width: 100%; }
+  .home .content {
+    width: 45rem; }
+    .home .content span {
+      color: #44bb6a;
+      font-size: 2rem; }
+    .home .content h3 {
+      color: black;
+      font-size: 3rem;
+      padding: 2rem 0; }
+      .home .content h3 a {
+        color: #44bb6a; }
+        .home .content h3 a:hover {
+          text-decoration: underline; }
+    .home .content p {
+      font-size: 1.5rem;
+      color: #777;
+      padding-bottom: 1rem;
+      line-height: 2; }
+
 @media (max-width: 1200px) {
   html {
     font-size: 55%; } }
@@ -103,7 +147,9 @@ body {
     .header.active {
       left: 0;
       box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
-      width: 40rem; } }
+      width: 40rem; }
+  .home .content h3 {
+    font-size: 2.5rem; } }
 
 @media (max-width: 450px) {
   html {
