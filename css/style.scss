@@ -212,6 +212,42 @@ section {
 }
 
 
+.info-container {
+  @include grid(25rem);
+
+  .box {
+    padding: 3rem;
+    background: $white;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    border: $border;
+
+    i {
+      height: 5rem;
+      width: 5rem;
+      line-height: 5rem;
+      font-size: 2rem;
+      border-radius: 50%;
+      background: green;
+      color: $white;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 2rem;
+      padding-bottom: 0.5rem;
+      color: $black;
+    }
+
+    p {
+      font-size: 1.5rem;
+      color: $light-color;
+    }
+  }
+}
+
+
 
 
 

@@ -133,6 +133,34 @@ section {
       padding-bottom: 1rem;
       line-height: 2; }
 
+.info-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem; }
+  .info-container .box {
+    padding: 3rem;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    border: 0.1rem solid #999; }
+    .info-container .box i {
+      height: 5rem;
+      width: 5rem;
+      line-height: 5rem;
+      font-size: 2rem;
+      border-radius: 50%;
+      background: green;
+      color: #fff;
+      text-align: center; }
+    .info-container .box h3 {
+      font-size: 2rem;
+      padding-bottom: 0.5rem;
+      color: #263238; }
+    .info-container .box p {
+      font-size: 1.5rem;
+      color: #777; }
+
 @media (max-width: 1200px) {
   html {
     font-size: 55%; } }
