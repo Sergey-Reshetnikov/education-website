@@ -1,0 +1,22 @@
+{
+  "name": "education-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass css/style.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sergey-Reshetnikov/education-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sergey-Reshetnikov/education-website/issues"
+  },
+  "homepage": "https://github.com/Sergey-Reshetnikov/education-website#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
