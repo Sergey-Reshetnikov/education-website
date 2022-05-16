@@ -561,6 +561,45 @@ section {
   }
 }
 
+.reviews {
+  .box-container {
+    @include grid(30rem);
+
+    .box {
+      text-align: center;
+      padding: 3rem;
+      background: $white;
+      border: $border;
+
+      img {
+        height: 10rem;
+        width: 10rem;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        font-size: 2rem;
+        color: $black;
+      }
+
+      p {
+        line-height: 2;
+        padding: 2rem 0;
+        font-size: 1.3rem;
+        color: $light-color;
+      }
+
+      .stars {
+        i {
+          font-size: 1.7rem;
+          color: $green;
+        }
+      }
+    }
+  }
+}
+
 
 
 
