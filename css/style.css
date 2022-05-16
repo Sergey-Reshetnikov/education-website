@@ -226,6 +226,55 @@ section {
       font-size: 1.4rem;
       color: #777; }
 
+.courses .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem; }
+  .courses .box-container .box {
+    position: relative;
+    padding: 2rem;
+    border: 0.1rem solid #999;
+    overflow: hidden;
+    text-align: center; }
+    .courses .box-container .box:hover .content {
+      opacity: 1; }
+    .courses .box-container .box .image img {
+      width: 100%; }
+    .courses .box-container .box .image h3 {
+      font-size: 2rem;
+      color: #263238;
+      font-weight: normal;
+      padding-bottom: 1rem; }
+    .courses .box-container .box .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column;
+      background: #44bb6a;
+      padding: 2rem;
+      opacity: 0; }
+      .courses .box-container .box .content .stars {
+        padding-bottom: 2rem; }
+        .courses .box-container .box .content .stars i {
+          font-size: 1.7rem;
+          color: #ff0; }
+      .courses .box-container .box .content h3 {
+        font-size: 2rem;
+        color: #fff; }
+      .courses .box-container .box .content p {
+        font-size: 1.4rem;
+        color: #fff;
+        padding: 1.5rem 0;
+        line-height: 2; }
+      .courses .box-container .box .content .btn:hover {
+        background: #ff0;
+        color: #263238; }
+
 @media (max-width: 1200px) {
   html {
     font-size: 55%; } }
