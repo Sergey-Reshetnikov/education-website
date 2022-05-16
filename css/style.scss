@@ -470,6 +470,97 @@ section {
 }
 
 
+.contact {
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    .contact-info-container {
+      width: 40rem;
+
+      .box {
+        margin-bottom: 2rem;
+        display: flex;
+        gap: 1.5rem;
+
+        i {
+          height: 5rem;
+          width: 5rem;
+          line-height: 5rem;
+          font-size: 2rem;
+          background: $green;
+          color: $white;
+          border-radius: 50%;
+          text-align: center;
+          margin-top: -1rem;
+        }
+
+        h3{
+          font-size: 2rem;
+          color: $black;
+          padding-bottom: 1rem;
+        }
+
+        p {
+          font-size: 1.5rem;
+          color: $light-color;
+          line-height: 2;
+        }
+      }
+
+      .share {
+        padding-top: 1rem;
+
+        a {
+          height: 5rem;
+          width: 5rem;
+          line-height: 5rem;
+          font-size: 2rem;
+          background: $black;
+          color: $white;
+          margin-right: 0.1rem;
+          text-align: center;
+
+          &:hover {
+            background: $green;
+          }
+        }
+      }
+    }
+
+    form {
+      flex: 1 1 42rem;
+
+      .inputBox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        input {
+          width: 49%;
+        }
+      }
+      .inputBox input, textarea {
+        padding: 1.4rem;
+        background: $light-bg;
+        text-transform: none;
+        color: $light-color;
+        margin: 0.7rem 0;
+        font-size: 1.6rem;
+        border: $border;
+      }
+
+      textarea {
+        width: 100%;
+        resize: none;
+        height: 15rem;
+      }
+    }
+  }
+}
+
 
 
 
@@ -513,5 +604,9 @@ section {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+
+  .contact .row form .inputBox input {
+    width: 100%;
   }
 }
